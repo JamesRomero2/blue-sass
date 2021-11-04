@@ -24,7 +24,7 @@ img {
 }
 
 html {
-  background-image: url(./src/assets/img/LightBG.png);
+  background-image: url(/src/assets/img/LightBG.png);
   color: #371E30;
   background-repeat: no-repeat;
   background-size: cover;
@@ -37,7 +37,7 @@ html a {
 }
 
 html[data-theme='dark'] {
-  background-image: url(./src/assets/img/DarkBG.png);
+  background-image: url(/src/assets/img/DarkBG.png);
   color: #F0E6EF;
   background-repeat: no-repeat;
   background-size: cover;
