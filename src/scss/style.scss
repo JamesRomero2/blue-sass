@@ -1,0 +1,97 @@
+@import 'variables';
+@import 'global';
+
+html {
+    @include LightTheme();
+}
+html[data-theme= 'dark'] {
+    @include DarkTheme();
+}
+
+// LandingSection
+#showcase {
+    .section-1 {
+        width: 80%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    ul {
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        margin: 10px 0;
+        padding: 15px 0;
+        
+    }
+
+    li {
+        padding: 0 20px;
+    }
+
+    h3 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-top: 20vh;
+        padding: 10px 0;
+        margin-bottom: 20px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    //CheckBox Style
+    input[type=checkbox] {
+        visibility: hidden;
+    }
+    label {
+        cursor: pointer;
+        text-indent: -99999px;
+        width: 104px;
+        height: 54px;
+        background: $light_txt_color;
+        border-radius: 100px;
+        position: relative;
+
+        &::after {
+        content: '';
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 40px;
+        height: 40px;
+        background: $light_color_2;
+        border-radius: 90px;
+        transition: 0.4s;
+        }
+    }
+    
+    input:checked + label {
+        background: $light_bg_color;
+    }
+    input:checked + label::after {
+        left: calc(100% - 45px);
+    }
+    input:active::after {
+        width: 90px;
+    }
+
+}
+//Transitions
+html.transition,
+html.transition *,
+html.transition *::before,
+html.transition *::after {
+    transition: all 750ms !important;
+    transition-delay: 0 !important;
+}
