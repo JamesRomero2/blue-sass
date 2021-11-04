@@ -24,11 +24,8 @@ img {
 }
 
 html {
-  background-image: url(../assets/img/LightBG.png);
+  background-color: #F0E6EF;
   color: #371E30;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
 }
 
@@ -37,11 +34,8 @@ html a {
 }
 
 html[data-theme='dark'] {
-  background-image: url(../assets/img/DarkBG.png);
+  background-color: #371E30;
   color: #F0E6EF;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   height: 100vh;
 }
 

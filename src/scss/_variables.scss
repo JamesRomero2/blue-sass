@@ -1,5 +1,5 @@
 // Light Palette
-$light_bg_img: url(../assets/img/LightBG.png);
+$light_bg_img: #F0E6EF;
 $light_bg_color: #F0E6EF;
 $light_txt_color: #371E30;
 $light_color_1: #A03E99;
@@ -7,7 +7,7 @@ $light_color_2: #DF57BC;
 
 
 // Dark Palette
-$dark_bg_img: url(../assets/img/DarkBG.png);
+$dark_bg_img: #371E30;
 $dark_bg_color: #371E30;
 $dark_txt_color: #F0E6EF;
 $dark_color_1: #9C89B8;
@@ -15,11 +15,11 @@ $dark_color_2: #F0A6CA;
 
 
 @mixin LightTheme {
-    background-image: $light_bg_img;
+    background-color: $light_bg_img;
     color: $light_txt_color;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
     height: 100vh;
     
     a {
@@ -28,11 +28,11 @@ $dark_color_2: #F0A6CA;
 }
 
 @mixin DarkTheme {
-    background-image: $dark_bg_img;
+    background-color: $dark_bg_img;
     color: $dark_txt_color;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // background-position: center;
     height: 100vh;
 
     a {
